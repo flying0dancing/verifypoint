@@ -1,0 +1,90 @@
+[
+    {
+        "dirs": [
+            "C:/ProgramData/TW/AcqAltair/config/prague/",
+            "C:/ProgramData/TW/AcqAltair/config/3600/",
+            ""
+        ],
+        "files": [
+            "Pyramid_reference.ply",
+            "algorithm_parameters_02.txt",
+            "algorithm_parameters_02Diagnose.txt",
+            "algorithm_parameters_02resHigh.txt"
+        ],
+        "id": 0,
+        "method": "verifyFiles",
+        "notes": "Verify File eixts",
+        "result": {
+            "fail": 0,
+            "id": 0,
+            "pass": 8,
+            "skip": 0,
+            "total": 8
+        }
+    },
+    {
+        "#skip": "yes",
+        "dirs": [
+            "C:/Program Files (x86)/Common Files/Trophy/Acquisition/"
+        ],
+        "files": [
+            "AcqCS3500.dll"
+        ],
+        "id": 1,
+        "method": "verifyFiles",
+        "notes": "Verify File eixts",
+        "result": {
+            "fail": 1,
+            "id": 1,
+            "pass": 0,
+            "skip": 0,
+            "total": 1
+        }
+    },
+    {
+        "id": 2,
+        "keyname": "HKEY_CURRENT_UsER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Extensions",
+        "method": "verifyRegKey",
+        "notes": "Verify reg key",
+        "result": {
+            "fail": 0,
+            "id": 2,
+            "pass": 1,
+            "skip": 0,
+            "total": 1
+        },
+        "valuedata": "C:\\Program Files (x86)\\Microsoft Office\\Root\\Office16\\EXCEL.EXE",
+        "valuename": "xls"
+    },
+    {
+        "id": 3,
+        "keyname": "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Carestream\\InstalledApplications\\CS IO 3D Acquisition",
+        "method": "verifyRegKey",
+        "notes": "Verify File eixts",
+        "skip": "yes",
+        "valuedata": "cs_scanflow.exe",
+        "valuename": "ApplicationName"
+    },
+    {
+        "dirs": [
+            "D:/person_lombardrisk/",
+            "D:/person_lombardrisk/LN_Scripts_Python/New folder",
+            ""
+        ],
+        "files": [
+            "abstest.py",
+            "README",
+            "datachecker.py"
+        ],
+        "id": 4,
+        "method": "verifyFiles",
+        "notes": "Verify File eixts",
+        "result": {
+            "fail": 6,
+            "id": 4,
+            "pass": 0,
+            "skip": 0,
+            "total": 6
+        }
+    }
+]
