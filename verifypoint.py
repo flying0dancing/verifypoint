@@ -28,29 +28,29 @@ def main():
         print(formatStr.format(result=obj['result']))
 
 def verifyFilesExist(obj,result):
-    formatStr4Print="file {0}exist.[{1}]"
+    formatStr4Print="file {0}exist.[{1}][notes:{2}]"
     result['id']=obj['id']
     files=combineFullNames(obj['dirs'], obj['files'])
     result['total']=len(files)
     print("caseId:{0}".format(obj['id']))
     for tfile in files:
         if fileExist(tfile):
-            print(formatStr4Print.format("",tfile))
+            print(formatStr4Print.format("",tfile,obj['notes']))
             result['pass']+=1
         else:
-            print(formatStr4Print.format("doesn't ",tfile))
+            print(formatStr4Print.format("doesn't ",tfile,obj['notes']))
             result['fail']+=1
 
 def verifyRegKey(obj,result):
     result['id']=obj['id']
     print("caseId:{0}".format(obj['id']))
     result['total']=1
-    formatStr4Print="value name: {0},value data:{1} is {2}"
+    formatStr4Print="value name: {0},value data:{1} is {2}\n details:[{3}\n{4}]"
     if getValueDataOfRegKey(obj['keyname'],obj['valuename'])==obj['valuedata']:
-        print(formatStr4Print.format(obj['valuename'],obj['valuedata'],'pass'))
+        print(formatStr4Print.format(obj['valuename'],obj['valuedata'],'pass',obj['keyname'],obj['notes']))
         result['pass']=1
     else:
-        print(formatStr4Print.format(obj['valuename'],obj['valuedata'],'fail'))
+        print(formatStr4Print.format(obj['valuename'],obj['valuedata'],'fail',obj['keyname'],obj['notes']))
         result['fail']=1
 
 

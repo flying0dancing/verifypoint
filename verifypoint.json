@@ -38,7 +38,7 @@
     },
     {
         "id": 3,
-        "skip": 0,
+        "#skip": 0,
         "method": "verifyRegKey",
         "keyname": "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Carestream\\InstalledApplications\\CS IO 3D Acquisition",
         "valuename": "ApplicationName",
@@ -47,15 +47,25 @@
     },
     {
         "id": 4,
-        "skip": "yes",
+        "#skip": "yes",
         "method": "verifyRegKey",
         "keyname": "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Carestream\\InstalledApplications\\CS IO 3D Acquisition",
         "valuename": "PackageName",
-        "valuedata": "ScanFlow_<version>_x64__s4fya6k7rr7nt",
+        "valuedata": "Carestream.Dental.ScanFlow_s4fya6k7rr7nt",
 		"notes": "TP#64878 2/2"
     },
     {
         "id": 5,
+        "method": "verifyRegKey",
+		"skip": "yes",
+        "keyname": "HKEY_CURRENT_USER\\SOFTWARE\\Carestream Dental\\CS ScanFlow\\Export",
+        "valuename": "oem_registered_scanner",
+        "valuedata": "ECNB1101",
+		"notes": "TP#63155 1/1"
+    },
+    {
+        "id": 6,
+		"skip": "yes",
         "method": "verifyFiles",
         "dirs": [
             "D:/person_lombardrisk/",
