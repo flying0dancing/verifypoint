@@ -13,7 +13,7 @@
         ],
         "id": 0,
         "method": "verifyFiles",
-        "notes": "Verify File eixts",
+        "notes": "TP#63799 1/1",
         "result": {
             "fail": 0,
             "id": 0,
@@ -23,7 +23,7 @@
         }
     },
     {
-        "#skip": "yes",
+        "#skip": 0,
         "dirs": [
             "C:/Program Files (x86)/Common Files/Trophy/Acquisition/"
         ],
@@ -32,7 +32,7 @@
         ],
         "id": 1,
         "method": "verifyFiles",
-        "notes": "Verify File eixts",
+        "notes": "TP#63800 1/1",
         "result": {
             "fail": 1,
             "id": 1,
@@ -46,13 +46,7 @@
         "keyname": "HKEY_CURRENT_UsER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Extensions",
         "method": "verifyRegKey",
         "notes": "Verify reg key",
-        "result": {
-            "fail": 0,
-            "id": 2,
-            "pass": 1,
-            "skip": 0,
-            "total": 1
-        },
+        "skip": "yes",
         "valuedata": "C:\\Program Files (x86)\\Microsoft Office\\Root\\Office16\\EXCEL.EXE",
         "valuename": "xls"
     },
@@ -60,10 +54,19 @@
         "id": 3,
         "keyname": "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Carestream\\InstalledApplications\\CS IO 3D Acquisition",
         "method": "verifyRegKey",
-        "notes": "Verify File eixts",
-        "skip": "yes",
+        "notes": "TP#64878 1/2",
+        "skip": 0,
         "valuedata": "cs_scanflow.exe",
         "valuename": "ApplicationName"
+    },
+    {
+        "id": 4,
+        "keyname": "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Carestream\\InstalledApplications\\CS IO 3D Acquisition",
+        "method": "verifyRegKey",
+        "notes": "TP#64878 2/2",
+        "skip": "yes",
+        "valuedata": "ScanFlow_<version>_x64__s4fya6k7rr7nt",
+        "valuename": "PackageName"
     },
     {
         "dirs": [
@@ -76,12 +79,12 @@
             "README",
             "datachecker.py"
         ],
-        "id": 4,
+        "id": 5,
         "method": "verifyFiles",
         "notes": "Verify File eixts",
         "result": {
             "fail": 6,
-            "id": 4,
+            "id": 5,
             "pass": 0,
             "skip": 0,
             "total": 6
