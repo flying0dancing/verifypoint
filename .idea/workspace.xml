@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec513e1e-c9ea-4426-92d5-2e36007a3dc0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/verifypoint.json" beforeDir="false" afterPath="$PROJECT_DIR$/verifypoint.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/verifypoint.py" beforeDir="false" afterPath="$PROJECT_DIR$/verifypoint.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/verifypoint.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="40" column="72" lean-forward="true" selection-start-line="40" selection-start-column="72" selection-end-line="40" selection-end-column="72" />
+            <state relative-caret-position="315">
+              <caret line="47" column="90" selection-start-line="47" selection-start-column="90" selection-end-line="47" selection-end-column="90" />
             </state>
           </provider>
         </entry>
@@ -137,8 +136,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/verifypoint.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="40" column="72" lean-forward="true" selection-start-line="40" selection-start-column="72" selection-end-line="40" selection-end-column="72" />
+        <state relative-caret-position="315">
+          <caret line="47" column="90" selection-start-line="47" selection-start-column="90" selection-end-line="47" selection-end-column="90" />
         </state>
       </provider>
     </entry>

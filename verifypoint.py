@@ -45,7 +45,7 @@ def verifyRegKey(obj,result):
     result['id']=obj['id']
     print("caseId:{0}".format(obj['id']))
     result['total']=1
-    formatStr4Print="value name: {0},value data:{1} is {2}\n details:[{3}\n{4}]"
+    formatStr4Print="value name: {0},value data:{1} is {2}\n    details:[{3}]\n    notes:[{4}]"
     if getValueDataOfRegKey(obj['keyname'],obj['valuename'])==obj['valuedata']:
         print(formatStr4Print.format(obj['valuename'],obj['valuedata'],'pass',obj['keyname'],obj['notes']))
         result['pass']=1
