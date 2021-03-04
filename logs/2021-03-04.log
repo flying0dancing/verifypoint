@@ -1,42 +1,45 @@
-2021-03-04 11:02:01,872 [checker.Main:24] [INFO]- setup environment
-2021-03-04 11:02:01,873 [checker.Main:45] [INFO]- caseId:0
-2021-03-04 11:02:01,873 [checker.Main:48] [INFO]- file exist.[C:/ProgramData/TW/AcqAltair/config/prague/Pyramid_reference.ply][notes:TP#63799 1/1]
-2021-03-04 11:02:01,874 [checker.Main:48] [INFO]- file exist.[C:/ProgramData/TW/AcqAltair/config/prague/algorithm_parameters_02.txt][notes:TP#63799 1/1]
-2021-03-04 11:02:01,874 [checker.Main:48] [INFO]- file exist.[C:/ProgramData/TW/AcqAltair/config/prague/algorithm_parameters_02Diagnose.txt][notes:TP#63799 1/1]
-2021-03-04 11:02:01,874 [checker.Main:48] [INFO]- file exist.[C:/ProgramData/TW/AcqAltair/config/prague/algorithm_parameters_02resHigh.txt][notes:TP#63799 1/1]
-2021-03-04 11:02:01,882 [checker.Main:48] [INFO]- file exist.[C:/ProgramData/TW/AcqAltair/config/3600/Pyramid_reference.ply][notes:TP#63799 1/1]
-2021-03-04 11:02:01,882 [checker.Main:48] [INFO]- file exist.[C:/ProgramData/TW/AcqAltair/config/3600/algorithm_parameters_02.txt][notes:TP#63799 1/1]
-2021-03-04 11:02:01,883 [checker.Main:48] [INFO]- file exist.[C:/ProgramData/TW/AcqAltair/config/3600/algorithm_parameters_02Diagnose.txt][notes:TP#63799 1/1]
-2021-03-04 11:02:01,884 [checker.Main:48] [INFO]- file exist.[C:/ProgramData/TW/AcqAltair/config/3600/algorithm_parameters_02resHigh.txt][notes:TP#63799 1/1]
-2021-03-04 11:02:01,884 [checker.Main:51] [INFO]- file doesn't exist.[Pyramid_reference.ply][notes:TP#63799 1/1]
-2021-03-04 11:02:01,885 [checker.Main:51] [INFO]- file doesn't exist.[algorithm_parameters_02.txt][notes:TP#63799 1/1]
-2021-03-04 11:02:01,885 [checker.Main:51] [INFO]- file doesn't exist.[algorithm_parameters_02Diagnose.txt][notes:TP#63799 1/1]
-2021-03-04 11:02:01,885 [checker.Main:51] [INFO]- file doesn't exist.[algorithm_parameters_02resHigh.txt][notes:TP#63799 1/1]
-2021-03-04 11:02:01,885 [checker.Main:33] [INFO]- tear down
+2021-03-04 14:00:07,271 [checker.Main:24] [INFO]- setup environment
+2021-03-04 14:00:07,272 [checker.Main:45] [INFO]- caseId:0
+2021-03-04 14:00:07,272 [checker.Main:48] [INFO]- pass on verified file exist.[C:/ProgramData/TW/AcqAltair/config/prague/Pyramid_reference.ply][notes:TP#63799 1/1]
+2021-03-04 14:00:07,272 [checker.Main:48] [INFO]- pass on verified file exist.[C:/ProgramData/TW/AcqAltair/config/prague/algorithm_parameters_02.txt][notes:TP#63799 1/1]
+2021-03-04 14:00:07,272 [checker.Main:48] [INFO]- pass on verified file exist.[C:/ProgramData/TW/AcqAltair/config/prague/algorithm_parameters_02Diagnose.txt][notes:TP#63799 1/1]
+2021-03-04 14:00:07,272 [checker.Main:48] [INFO]- pass on verified file exist.[C:/ProgramData/TW/AcqAltair/config/prague/algorithm_parameters_02resHigh.txt][notes:TP#63799 1/1]
+2021-03-04 14:00:07,279 [checker.Main:48] [INFO]- pass on verified file exist.[C:/ProgramData/TW/AcqAltair/config/3600/Pyramid_reference.ply][notes:TP#63799 1/1]
+2021-03-04 14:00:07,279 [checker.Main:48] [INFO]- pass on verified file exist.[C:/ProgramData/TW/AcqAltair/config/3600/algorithm_parameters_02.txt][notes:TP#63799 1/1]
+2021-03-04 14:00:07,279 [checker.Main:48] [INFO]- pass on verified file exist.[C:/ProgramData/TW/AcqAltair/config/3600/algorithm_parameters_02Diagnose.txt][notes:TP#63799 1/1]
+2021-03-04 14:00:07,280 [checker.Main:48] [INFO]- pass on verified file exist.[C:/ProgramData/TW/AcqAltair/config/3600/algorithm_parameters_02resHigh.txt][notes:TP#63799 1/1]
+2021-03-04 14:00:07,280 [checker.Main:33] [INFO]- tear down
 
-2021-03-04 11:02:01,886 [checker.Main:24] [INFO]- setup environment
-2021-03-04 11:02:01,886 [checker.Main:45] [INFO]- caseId:1
-2021-03-04 11:02:01,886 [checker.Main:51] [INFO]- file doesn't exist.[C:/Program Files (x86)/Common Files/Trophy/Acquisition/AcqCS3500.dll][notes:TP#63800 1/1]
-2021-03-04 11:02:01,887 [checker.Main:33] [INFO]- tear down
+2021-03-04 14:00:07,280 [checker.Main:24] [INFO]- setup environment
+2021-03-04 14:00:07,280 [checker.Main:45] [INFO]- caseId:1
+2021-03-04 14:00:07,280 [checker.Main:51] [INFO]- fail on verified file doesn't exist.[C:/Program Files (x86)/Common Files/Trophy/Acquisition/AcqCS3500.dll][notes:TP#63800 1/1]
+2021-03-04 14:00:07,280 [checker.Main:33] [INFO]- tear down
 
-2021-03-04 11:02:01,887 [checker.Main:24] [INFO]- setup environment
-2021-03-04 11:02:01,887 [checker.Main:56] [INFO]- caseId:2
-2021-03-04 11:02:01,887 [checker.Main:60] [INFO]- value name: xls,value data:C:\Program Files (x86)\Microsoft Office\Root\Office16\EXCEL.EXE is pass
+2021-03-04 14:00:07,280 [checker.Main:24] [INFO]- setup environment
+2021-03-04 14:00:07,280 [checker.Main:56] [INFO]- caseId:2
+2021-03-04 14:00:07,281 [checker.Main:60] [INFO]- pass on verified registry value name: xls,value data:C:\Program Files (x86)\Microsoft Office\Root\Office16\EXCEL.EXE
     details:[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Extensions]
     notes:[Verify reg key]
-2021-03-04 11:02:01,888 [checker.Main:33] [INFO]- tear down
+2021-03-04 14:00:07,281 [checker.Main:33] [INFO]- tear down
 
-2021-03-04 11:02:01,888 [checker.Main:24] [INFO]- setup environment
-2021-03-04 11:02:03,663 [checker.Main:68] [INFO]- caseId:7
-2021-03-04 11:19:33,838 [checker.Main:82] [INFO]- element: {'tag': 'option', 'attributes': {'key': 'ENABLE_SN_SCANNER_TYPE_CHECK', 'value': 'false'}} under element: {'tag': 'class', 'attributes': {'key': 'CONFIG'}} verify is pass
+2021-03-04 14:00:07,281 [checker.Main:24] [INFO]- setup environment
+2021-03-04 14:00:07,281 [checker.Main:68] [INFO]- caseId:7
+2021-03-04 14:00:07,283 [checker.Main:82] [INFO]- pass on verified element: {'tag': 'option', 'attributes': {'key': 'ENABLE_SN_SCANNER_TYPE_CHECK', 'value': 'false'}} under element: {'tag': 'class', 'attributes': {'key': 'CONFIG'}}
     notes:[Verify xml attributes]
-2021-03-04 11:20:04,884 [checker.Main:82] [INFO]- element: {'tag': 'option', 'attributes': {'key': 'ENABLE_TT_LICENSE_CHECK', 'value': 'false'}} under element: {'tag': 'class', 'attributes': {'key': 'CONFIG'}} verify is pass
+2021-03-04 14:00:07,283 [checker.Main:82] [INFO]- pass on verified element: {'tag': 'option', 'attributes': {'key': 'ENABLE_TT_LICENSE_CHECK', 'value': 'false'}} under element: {'tag': 'class', 'attributes': {'key': 'CONFIG'}}
     notes:[Verify xml attributes]
-2021-03-04 11:20:04,887 [checker.Main:85] [INFO]- element: {'tag': 'option', 'attributes': {'key': 'CSDATASERVICE_REGISTER_HOST', 'value': 'csddsci.azurewebsites.net'}} under element: {'tag': 'class', 'attributes': {'key': 'CONFIG'}} verify is fail
-    notes:[Verify xml attributes]
-2021-03-04 11:20:04,887 [checker.Main:33] [INFO]- tear down
+2021-03-04 14:00:07,284 [checker.Main:33] [INFO]- tear down
 
-2021-03-04 11:20:04,905 [checker.Main:38] [INFO]- caseId:0 [total:12 pass:8 fail:4]
-2021-03-04 11:20:04,905 [checker.Main:38] [INFO]- caseId:1 [total:1 pass:0 fail:1]
-2021-03-04 11:20:04,906 [checker.Main:38] [INFO]- caseId:2 [total:1 pass:1 fail:0]
-2021-03-04 11:20:04,906 [checker.Main:38] [INFO]- caseId:7 [total:3 pass:2 fail:1]
+2021-03-04 14:00:07,284 [checker.Main:24] [INFO]- setup environment
+2021-03-04 14:00:07,284 [checker.Main:68] [INFO]- caseId:8
+2021-03-04 14:00:07,284 [checker.Main:85] [INFO]- fail on verified element: {'tag': 'option', 'attributes': {'key': 'CSDATASERVICE_REGISTER_HOST', 'value': 'csdataservice.azurewebsites.net'}} under element: {'tag': 'class', 'attributes': {'key': 'CONFIG'}}
+    notes:[TP#63155 1/1]
+2021-03-04 14:00:07,285 [checker.Main:82] [INFO]- pass on verified element: {'tag': 'option', 'attributes': {'key': 'CSCONNECT_AUTH_HOST', 'value': 'www.csdentalconnect.com'}} under element: {'tag': 'class', 'attributes': {'key': 'CONFIG'}}
+    notes:[TP#63155 1/1]
+2021-03-04 14:00:07,285 [checker.Main:33] [INFO]- tear down
+
+2021-03-04 14:00:07,287 [checker.Main:38] [INFO]- caseId:0 [total:8 pass:8 fail:0]
+2021-03-04 14:00:07,287 [checker.Main:38] [INFO]- caseId:1 [total:1 pass:0 fail:1]
+2021-03-04 14:00:07,287 [checker.Main:38] [INFO]- caseId:2 [total:1 pass:1 fail:0]
+2021-03-04 14:00:07,287 [checker.Main:38] [INFO]- caseId:7 [total:2 pass:2 fail:0]
+2021-03-04 14:00:07,287 [checker.Main:38] [INFO]- caseId:8 [total:2 pass:1 fail:1]

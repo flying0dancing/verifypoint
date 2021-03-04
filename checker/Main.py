@@ -38,24 +38,24 @@ def main():
         logger.info(formatStr.format(result=obj['result']))
 
 def verifyFilesExist(obj,result):
-    formatStr4Print="file {0}exist.[{1}][notes:{2}]"
+    formatStr4Print="{0} on verified file {1}exist.[{2}][notes:{3}]"
     result['id']=obj['id']
     files=StrUtil.combineFullNames(obj['dirs'], obj['files'])
     result['total']=len(files)
     logger.info("caseId:{0}".format(obj['id']))
     for tfile in files:
         if FileUtil.fileExist(tfile):
-            logger.info(formatStr4Print.format("",tfile,obj['notes']))
+            logger.info(formatStr4Print.format("pass","",tfile,obj['notes']))
             result['pass']+=1
         else:
-            logger.info(formatStr4Print.format("doesn't ",tfile,obj['notes']))
+            logger.info(formatStr4Print.format("fail","doesn't ",tfile,obj['notes']))
             result['fail']+=1
 
 def verifyRegKey(obj,result):
     result['id']=obj['id']
     logger.info("caseId:{0}".format(obj['id']))
     result['total']=1
-    formatStr4Print="value name: {0},value data:{1} is {2}\n    details:[{3}]\n    notes:[{4}]"
+    formatStr4Print="{2} on verified registry value name: {0},value data:{1}\n    details:[{3}]\n    notes:[{4}]"
     if WinReg.getValueDataOfRegKey(obj['keyname'],obj['valuename'])==obj['valuedata']:
         logger.info(formatStr4Print.format(obj['valuename'],obj['valuedata'],'pass',obj['keyname'],obj['notes']))
         result['pass']=1
@@ -66,7 +66,7 @@ def verifyRegKey(obj,result):
 def verifyXmlAtrr(obj,result):
     result['id'] = obj['id']
     logger.info("caseId:{0}".format(obj['id']))
-    formatStr4Print = "element: {0} under element: {1} verify is {2}\n    notes:[{3}]"
+    formatStr4Print = "{2} on verified element: {0} under element: {1}\n    notes:[{3}]"
 
     files = StrUtil.combineFullNames(obj['dirs'], obj['files'])
     total=0

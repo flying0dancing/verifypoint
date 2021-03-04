@@ -4,8 +4,7 @@
         "method": "verifyFiles",
         "dirs": [
             "C:/ProgramData/TW/AcqAltair/config/prague/",
-            "C:/ProgramData/TW/AcqAltair/config/3600/",
-            ""
+            "C:/ProgramData/TW/AcqAltair/config/3600/"
         ],
         "files": [
             "Pyramid_reference.ply",
@@ -69,8 +68,7 @@
         "method": "verifyFiles",
         "dirs": [
             "D:/person_lombardrisk/",
-            "D:/person_lombardrisk/LN_Scripts_Python/New folder",
-            ""
+            "D:/person_lombardrisk/LN_Scripts_Python/New folder"
         ],
         "files": [
             "abstest.py",
@@ -92,9 +90,25 @@
         ],
         "elements": [
             {"tag": "option","attributes": {"key":"ENABLE_SN_SCANNER_TYPE_CHECK","value":"false"}},
-            {"tag": "option","attributes": {"key":"ENABLE_TT_LICENSE_CHECK","value": "false"}},
-            {"tag": "option","attributes": {"key":"CSDATASERVICE_REGISTER_HOST","value": "csddsci.azurewebsites.net"}}
+            {"tag": "option","attributes": {"key":"ENABLE_TT_LICENSE_CHECK","value": "false"}}
         ],
         "notes": "Verify xml attributes"
+    },
+    {
+        "id": 8,
+		"#skip": "yes",
+        "method": "verifyXmlAtrr",
+        "dirs": [],
+        "files": [
+            "C:\\ProgramData\\TW\\AcqAltair\\preference - Copy.xml"
+        ],
+        "parentElements": [
+            {"tag": "class","attributes": {"key": "CONFIG"}}
+        ],
+        "elements": [
+            {"tag": "option","attributes": {"key":"CSDATASERVICE_REGISTER_HOST","value": "csdataservice.azurewebsites.net"}},
+            {"tag": "option","attributes": {"key":"CSCONNECT_AUTH_HOST","value":"www.csdentalconnect.com"}}
+        ],
+        "notes": "TP#63155 1/1"
     }
 ]
