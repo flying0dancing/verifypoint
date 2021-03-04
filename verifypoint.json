@@ -83,7 +83,7 @@
         "method": "verifyXmlAtrr",
         "dirs": [],
         "files": [
-            "C:\\ProgramData\\TW\\AcqAltair\\preference - Copy.xml"
+            "C:\\ProgramData\\TW\\AcqAltair\\preference.xml"
         ],
         "parentElements": [
             {"tag": "class","attributes": {"key": "CONFIG"}}
@@ -100,7 +100,7 @@
         "method": "verifyXmlAtrr",
         "dirs": [],
         "files": [
-            "C:\\ProgramData\\TW\\AcqAltair\\preference - Copy.xml"
+            "C:\\ProgramData\\TW\\AcqAltair\\preference.xml"
         ],
         "parentElements": [
             {"tag": "class","attributes": {"key": "CONFIG"}}

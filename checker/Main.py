@@ -71,7 +71,9 @@ def verifyXmlAtrr(obj,result):
     files = StrUtil.combineFullNames(obj['dirs'], obj['files'])
     total=0
     if not files or len(files)==0:
-        logger.error("no xml file need to verify, please provide files.")
+        result['fail'] = 1
+        total = 1
+        logger.log("fail on file doesn't exist, please provide files.")
     for tfile in files:
         if obj['parentElements'] and len(obj['parentElements']) > 0:
             for parentElement in obj['parentElements']:
