@@ -1,8 +1,8 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
-import os,sys
+import os
 BASE_DIR=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.append(BASE_DIR)
 
-from checker import Main
-Main.main()
+if __name__=='__main__':
+    print(BASE_DIR)
+    print(os.path.dirname(BASE_DIR))

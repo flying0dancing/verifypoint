@@ -29,16 +29,16 @@
     },
     {
         "id": 2,
-		"skip": "yes",
+		"#skip": "yes",
         "method": "verifyRegKey",
-        "keyname": "HKEY_CURRENT_UsER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Extensions",
+        "keyname": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Extensions",
         "notes": "Verify reg key",
         "valuedata": "C:\\Program Files (x86)\\Microsoft Office\\Root\\Office16\\EXCEL.EXE",
         "valuename": "xls"
     },
     {
         "id": 3,
-        "#skip": 0,
+        "skip": 0,
         "method": "verifyRegKey",
         "keyname": "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Carestream\\InstalledApplications\\CS IO 3D Acquisition",
         "valuename": "ApplicationName",
@@ -47,7 +47,7 @@
     },
     {
         "id": 4,
-        "#skip": "yes",
+        "skip": "yes",
         "method": "verifyRegKey",
         "keyname": "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Carestream\\InstalledApplications\\CS IO 3D Acquisition",
         "valuename": "PackageName",
@@ -78,5 +78,23 @@
             "datachecker.py"
         ],
         "notes": "Verify File eixts"
+    },
+    {
+        "id": 7,
+		"#skip": "yes",
+        "method": "verifyXmlAtrr",
+        "dirs": [],
+        "files": [
+            "C:\\ProgramData\\TW\\AcqAltair\\preference - Copy.xml"
+        ],
+        "parentElements": [
+            {"tag": "class","attributes": {"key": "CONFIG"}}
+        ],
+        "elements": [
+            {"tag": "option","attributes": {"key":"ENABLE_SN_SCANNER_TYPE_CHECK","value":"false"}},
+            {"tag": "option","attributes": {"key":"ENABLE_TT_LICENSE_CHECK","value": "false"}},
+            {"tag": "option","attributes": {"key":"CSDATASERVICE_REGISTER_HOST","value": "csddsci.azurewebsites.net"}}
+        ],
+        "notes": "Verify xml attributes"
     }
 ]
