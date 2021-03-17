@@ -29,6 +29,9 @@ def setJson(fname,obj):
     with open(fname,'w',encoding='utf-8') as fileHd:
         json.dump(obj,fileHd,ensure_ascii=False,sort_keys=True,indent=4)#for writing chinese charactors
 
+def createDirectories(path):
+    if not os.path.exists(path):
+        os.makedirs(path)
 
 if __name__=='__main__':
     pass

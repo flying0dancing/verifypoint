@@ -1,0 +1,112 @@
+[
+    {
+        "id": 0,
+        "method": "verifyFiles",
+        "dirs": [
+            "C:/ProgramData/TW/AcqAltair/config/prague/",
+            "C:/ProgramData/TW/AcqAltair/config/3600/"
+        ],
+        "files": [
+            "Pyramid_reference.ply",
+            "algorithm_parameters_02.txt",
+            "algorithm_parameters_02Diagnose.txt",
+            "algorithm_parameters_02resHigh.txt"
+        ],
+        "notes": "TP#63799 1/1"
+    },
+    {
+        "id": 1,
+        "method": "verifyFiles",
+        "#skip": 0,
+        "dirs": [
+            "C:/Program Files (x86)/Common Files/Trophy/Acquisition/"
+        ],
+        "files": [
+            "AcqCS3500.dll"
+        ],
+        "notes": "TP#63800 1/1"
+    },
+    {
+        "id": 2,
+		"#skip": "yes",
+        "method": "verifyRegKey",
+        "keyname": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Extensions",
+        "notes": "Verify reg key",
+        "valuedata": "C:\\Program Files (x86)\\Microsoft Office\\Root\\Office16\\EXCEL.EXE",
+        "valuename": "xls"
+    },
+    {
+        "id": 3,
+        "skip": 0,
+        "method": "verifyRegKey",
+        "keyname": "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Carestream\\InstalledApplications\\CS IO 3D Acquisition",
+        "valuename": "ApplicationName",
+        "valuedata": "cs_scanflow.exe",
+		"notes": "TP#64878 1/2"
+    },
+    {
+        "id": 4,
+        "skip": "yes",
+        "method": "verifyRegKey",
+        "keyname": "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Carestream\\InstalledApplications\\CS IO 3D Acquisition",
+        "valuename": "PackageName",
+        "valuedata": "Carestream.Dental.ScanFlow_s4fya6k7rr7nt",
+		"notes": "TP#64878 2/2"
+    },
+    {
+        "id": 5,
+        "method": "verifyRegKey",
+		"skip": "yes",
+        "keyname": "HKEY_CURRENT_USER\\SOFTWARE\\Carestream Dental\\CS ScanFlow\\Export",
+        "valuename": "oem_registered_scanner",
+        "valuedata": "ECNB1101",
+		"notes": "TP#63155 1/1"
+    },
+    {
+        "id": 6,
+		"skip": "yes",
+        "method": "verifyFiles",
+        "dirs": [
+            "D:/person_lombardrisk/",
+            "D:/person_lombardrisk/LN_Scripts_Python/New folder"
+        ],
+        "files": [
+            "abstest.py",
+            "README",
+            "datachecker.py"
+        ],
+        "notes": "Verify File eixts"
+    },
+    {
+        "id": 7,
+		"#skip": "yes",
+        "method": "verifyXmlElementNotExist",
+        "files": [
+            "C:\\ProgramData\\TW\\AcqAltair\\preference.xml"
+        ],
+        "parentElements": [
+            {"tag": "class","attributes": {"key": "CONFIG"}}
+        ],
+        "elements": [
+            {"tag": "option","attributes": {"key":"ENABLE_SN_SCANNER_TYPE_CHECK"}},
+            {"tag": "option","attributes": {"key":"ENABLE_TT_LICENSE_CHECK"}}
+        ],
+        "notes": "Verify xml attributes"
+    },
+    {
+        "id": 8,
+		"#skip": "yes",
+        "method": "verifyXmlAtrr",
+        "files": [
+            "C:\\ProgramData\\TW\\AcqAltair\\preference.xml"
+        ],
+        "parentElements": [
+            {"tag": "class","attributes": {"key": "CONFIG"}}
+        ],
+        "elements": [
+            {"tag": "option","attributes": {"key":"CSDATASERVICE_REGISTER_HOST","value": "csdataservice.azurewebsites.net"}},
+            {"tag": "option","attributes": {"key":"CSCONNECT_AUTH_HOST","value":"www.csdentalconnect.com"}}
+        ],
+        "notes": "TP#63155 1/1"
+    }
+]

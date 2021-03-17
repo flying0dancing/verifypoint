@@ -11,7 +11,7 @@ import logging
 from utils import Logger
 logger = logging.getLogger('checker.XmlUtil')
 
-def verifyElement(xmlfile,verifyElt):
+def verifyElement1(xmlfile,verifyElt):
     logger.debug("verify element {0}".format(verifyElt))
     tree = et.parse(xmlfile)
     root = tree.getroot()
@@ -42,7 +42,7 @@ def verifyElement(xmlfile,verifyParentElt,verifyElt):
                     flag=True
                     break
     if not findParent:
-        logger.error("cannot find parent element")
+        logger.error("cannot find parent element {0}".format(verifyParentElt))
     #tree.write(xmlfile)
     #tree.write(xmlfile, encoding="utf-8", xml_declaration=True)
     return flag
